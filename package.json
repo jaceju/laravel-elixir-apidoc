@@ -1,0 +1,32 @@
+{
+  "name": "laravel-elixir-apidoc",
+  "version": "0.1.0",
+  "description": "Build style guide with hologram.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaceju/laravel-elixir-apidoc"
+  },
+  "keywords": [
+    "gulp",
+    "laravel",
+    "elixir"
+  ],
+  "author": {
+    "name": "Jace Ju",
+    "email": "jaceju@gmail.com",
+    "url": "https://github.com/jaceju"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaceju/laravel-elixir-apidoc/issues"
+  },
+  "homepage": "https://github.com/jaceju/laravel-elixir-apidoc",
+  "dependencies": {
+    "gulp-apidoc": "~0.1.0",
+    "underscore": "~1.8.0"
+  }
+}
