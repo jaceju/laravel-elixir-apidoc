@@ -7,13 +7,13 @@ var apidoc = require('gulp-apidoc');
 
 elixir.extend('apidoc', function (options) {
 
-    options = _.extend({
+    var opts = _.extend({
         src: 'app/',
         dest: 'docs/api'
     }, options);
 
     gulp.task('apidoc', function () {
-        apidoc.exec(options);
+        apidoc.exec(opts);
     });
 
     return this.queueTask('apidoc');
