@@ -13,10 +13,7 @@ elixir.extend('apidoc', function (options) {
     }, options);
 
     gulp.task('apidoc', function () {
-        apidoc.exec({
-            src: options.src,
-            dest: options.dest
-        });
+        apidoc.exec(options);
     });
 
     return this.queueTask('apidoc');
