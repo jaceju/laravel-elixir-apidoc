@@ -1,20 +1,22 @@
 'use strict';
 
 var gulp = require('gulp');
-var elixir = require('laravel-elixir');
+var Elixir = require('laravel-elixir');
 var _ = require('underscore');
 var apidoc = require('gulp-apidoc');
 
-elixir.extend('apidoc', function (options) {
+Elixir.extend('apidoc', function (options) {
 
-    var opts = _.extend({
+    options = _.extend({
         src: 'app/',
-        dest: 'docs/api'
+        dest: 'public/docs/api'
     }, options);
 
-    gulp.task('apidoc', function () {
-        apidoc.exec(opts);
-    });
+    new Elixir.Task('apidoc', function () {
+        apidoc.exec({
+            src: options.src,
+            dest: options.dest
+        });
+    }).watch(options.src + '**/*.php');
 
-    return this.queueTask('apidoc');
 });
