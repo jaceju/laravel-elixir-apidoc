@@ -1,6 +1,7 @@
 {
   "name": "laravel-elixir-apidoc",
   "description": "Build style guide with hologram.",
+  "version": "0.1.3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
